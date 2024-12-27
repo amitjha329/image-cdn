@@ -42,6 +42,6 @@ app.get('/images/:filename', (req: Request, res: Response) => {
   res.sendFile(req.params.filename, options);
 });
 
-app.listen(3000, () => {
+app.listen(6543, () => {
   console.log('Server is running on port 3000');
 });
