@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 const rootDir: string = process.env.ROOT_DIR || __dirname;
 
-app.get('/images/*', (req: Request, res: Response) => {
+app.get('/*', (req: Request, res: Response) => {
   const options = {
     root: rootDir,
   };
